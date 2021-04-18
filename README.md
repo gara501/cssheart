@@ -1,2 +1,3 @@
 # cssheart
-CSS exercise
+
+CSS positioning exercise example.
