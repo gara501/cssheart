@@ -14,7 +14,7 @@
 }
 
 .heart {
-	animation: beat 1s infinite alternate;
+	animation: beat 600ms alternate infinite;
 	background-color: black;
 	border-radius: 100px 100px 0 0;
 	height: 250px;
@@ -24,15 +24,15 @@
 }
 
 .heart::after {
-	background-color: inherit;
-	background: inherit;
+	background-color: inherit;	
 	border-radius: 100px 100px 0 0;
+	box-shadow: 50px -5px 20px black;
 	content: '';
 	height: 250px;
-	left: 40%;
+	left: 33%;
 	position: absolute;
 	transform: rotateZ(90deg);
-	top: 20%;
+	top: 21%;
 	width: 150px;
 }
 
