@@ -1,0 +1,50 @@
+* {
+	all: unset;
+	box-sizing: border-box;
+	display: revert;
+}
+
+.container {
+	align-items: center;
+	background-color: lightblue;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+.heart {
+	animation: beat 1s infinite alternate;
+	background-color: black;
+	border-radius: 100px 100px 0 0;
+	height: 250px;
+	position: relative;
+	transform: rotateZ(-45deg);
+	width: 150px;
+}
+
+.heart::after {
+	background-color: inherit;
+	background: inherit;
+	border-radius: 100px 100px 0 0;
+	content: '';
+	height: 250px;
+	left: 40%;
+	position: absolute;
+	transform: rotateZ(90deg);
+	top: 20%;
+	width: 150px;
+}
+
+@keyframes beat {
+	from {
+		transform: rotateZ(-45deg) scale(.4);
+		
+	}
+
+	to {
+		transform: rotateZ(-45deg) scale(1);
+		background-color: red;
+	}
+	
+}
